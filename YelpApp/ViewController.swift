@@ -18,3 +18,6 @@ class ViewController: UIViewController {
 
 }
 
+// TODO: create model to parse JSON
+// TODO: create an API Client
+

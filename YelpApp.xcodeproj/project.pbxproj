@@ -14,6 +14,7 @@
 		91E6E61F22F8868300378558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E6E61D22F8868300378558 /* LaunchScreen.storyboard */; };
 		91E6E62A22F8868300378558 /* YelpAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E62922F8868300378558 /* YelpAppTests.swift */; };
 		91E6E63522F8868300378558 /* YelpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E63422F8868300378558 /* YelpAppUITests.swift */; };
+		91E6E64322F8879A00378558 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E64222F8879A00378558 /* Business.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		91E6E63022F8868300378558 /* YelpAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E6E63422F8868300378558 /* YelpAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAppUITests.swift; sourceTree = "<group>"; };
 		91E6E63622F8868300378558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E6E64222F8879A00378558 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				91E6E61422F8868000378558 /* AppDelegate.swift */,
 				91E6E61622F8868000378558 /* ViewController.swift */,
+				91E6E64222F8879A00378558 /* Business.swift */,
 				91E6E61822F8868000378558 /* Main.storyboard */,
 				91E6E61B22F8868300378558 /* Assets.xcassets */,
 				91E6E61D22F8868300378558 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E6E64322F8879A00378558 /* Business.swift in Sources */,
 				91E6E61722F8868000378558 /* ViewController.swift in Sources */,
 				91E6E61522F8868000378558 /* AppDelegate.swift in Sources */,
 			);
