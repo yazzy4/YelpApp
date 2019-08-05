@@ -16,10 +16,10 @@ enum NetworkError: Error {
 }
 
 class YelpAPIClient {
-    public func searchBusinesses(completion: @escaping (Result< Business, NetworkError>) -> Void) {
+    public func searchBusinesses(completion: @escaping ([Business], NetworkError?) -> Void) {
         let endPointURL = "https://api.yelp.com/v3/businesses/search?term=coffee&location=10023"
         guard let url = URL(string: endPointURL) else {
-            completion(.failure(.badURL))
+            completion([], NetworkError.badURL)
             return
         }
         var request = URLRequest(url: url)
@@ -27,13 +27,13 @@ class YelpAPIClient {
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
-                completion(.failure(.apiError(error)))
+                completion([], NetworkError.apiError(error))
             } else if let data = data {
                 do {
                     let searchResult = try JSONDecoder().decode(BusinessSearch.self, from: data)
-                    completion(.success(searchResult.businesses))
+                    completion(searchResult.business, nil)
                 } catch {
-                    completion(.failure(.jsonDecodingError(error)))
+                    completion([], NetworkError.jsonDecodingError(error))
                 }
             }
         }

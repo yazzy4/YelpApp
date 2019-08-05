@@ -16,6 +16,7 @@
 		91E6E63522F8868300378558 /* YelpAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E63422F8868300378558 /* YelpAppUITests.swift */; };
 		91E6E64322F8879A00378558 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E64222F8879A00378558 /* Business.swift */; };
 		91E6E64522F88B7500378558 /* YelpAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E64422F88B7500378558 /* YelpAPIClient.swift */; };
+		91E6E64922F88F2F00378558 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E6E64822F88F2F00378558 /* SecretKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		91E6E63622F8868300378558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91E6E64222F8879A00378558 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		91E6E64422F88B7500378558 /* YelpAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPIClient.swift; sourceTree = "<group>"; };
+		91E6E64822F88F2F00378558 /* SecretKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				91E6E61622F8868000378558 /* ViewController.swift */,
 				91E6E64422F88B7500378558 /* YelpAPIClient.swift */,
 				91E6E64222F8879A00378558 /* Business.swift */,
+				91E6E64822F88F2F00378558 /* SecretKeys.swift */,
 				91E6E61822F8868000378558 /* Main.storyboard */,
 				91E6E61B22F8868300378558 /* Assets.xcassets */,
 				91E6E61D22F8868300378558 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				91E6E64522F88B7500378558 /* YelpAPIClient.swift in Sources */,
 				91E6E61722F8868000378558 /* ViewController.swift in Sources */,
 				91E6E61522F8868000378558 /* AppDelegate.swift in Sources */,
+				91E6E64922F88F2F00378558 /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
