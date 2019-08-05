@@ -20,4 +20,34 @@ struct Business: Codable {
     let is_closed: Bool
     let url: String
     let review_count: Int
+    let categories: [Categories]
+    let coordinates: Coordinates
+    let location: Location
 }
+
+struct Categories: Codable {
+    let alias: String
+    let title: String
+}
+
+struct Coordinates: Codable {
+    let latitude: Double
+    let longitude: Double
+}
+
+struct Location: Codable {
+    let address1: String
+    let address2: String
+    let address3: String
+    let city: String
+    let zip_code: String
+    let country: String
+    let state: String
+    let display_address: [Display_Address]
+
+}
+
+struct Display_Address: Codable {
+    
+}
+
